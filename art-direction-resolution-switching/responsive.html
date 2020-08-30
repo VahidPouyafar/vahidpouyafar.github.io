@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8" />
+  <title>Art direction and resolution switching</title>
+  <meta name="viewport" content="width=device-width" />
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  <style>
+    * {box-sizing: border-box;}
+
+    html {
+      font-family: "Indie Flower", cursive;
+      font-size: 1.3em;
+      color: white;
+      background-color: gray;
+    }
+
+    body {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #4c5575;
+      box-shadow: 1px 1px 10px #8a8a8a;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      border: 1px solid lightgray;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .code {
+      border-left: 3px solid yellow;
+      padding-left: 10px;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.4);
+      line-height: 1.5;
+    }
+
+  </style>
+</head>
+<body>
+
+<h1>Art Direction & Resolution Switching</h1>
+<br />
+
+<h2>- Art Direction</h2>
+<div class="code"><pre><code>&lt;picture&gt;
+  &lt;source media="(max-width: 800px)" srcset="art-direction-portrait.jpg" /&gt;
+  &lt;source media="(min-width: 801px)" srcset="art-direction-original.jpg" /&gt;
+  &lt;img src="art-direction-original.jpg" alt="Slam-dunk" /&gt;
+&lt;/picture&gt;</code></pre></div><br />
+
+<picture>
+  <source media="(max-width: 800px)" srcset="art-direction-portrait.jpg" />
+  <source media="(min-width: 801px)" srcset="art-direction-original.jpg" />
+  <img src="art-direction-original.jpg" alt="Slam-dunk" />
+</picture><br />
+
+<h2>- Resolution Switching</h2>
+<div class="code"><pre><code>&lt;img srcset="resolution-switching-small-version.jpg 500w,
+             resolution-switching-original.jpg 1000w"
+     sizes="(max-width: 800px) 500px,
+            1000px"
+     src="resolution-switching-original.jpg" alt="Paris" /&gt;</code></pre></div><br />
+
+<img srcset="resolution-switching-small-version.jpg 500w,
+             resolution-switching-original.jpg 1000w"
+     sizes="(max-width: 800px) 500px,
+            1000px"
+     src="resolution-switching-original.jpg" alt="Paris" />
+
+</body>
+</html>
