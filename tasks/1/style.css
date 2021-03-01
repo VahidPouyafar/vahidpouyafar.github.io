@@ -1,0 +1,78 @@
+﻿body {
+  font-family: 'Josefin Sans', sans-serif;
+  color: #ffffff;
+  background-color: #000000;
+  overflow: hidden;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 20px 0;
+}
+
+li p {
+  margin: 0;
+  display: flex;
+}
+
+label {
+  flex: 0 1 25%;
+  text-align: right;
+  padding-right: 10px;
+}
+
+li:nth-child(2) p:not(last-child) {
+  margin-bottom: 10px;
+}
+
+form {
+  position: absolute;
+  width: 100%;
+  max-width: 700px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+}
+
+select {
+  font-size: 20px;
+}
+
+form input {
+  padding: 3px;
+  font-size: 20px;
+}
+
+input[type="button"] {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 75%;
+  width: 100%;
+  margin-top: 10px;
+  padding: 5px;
+  color: white;
+  border: 0px;
+  cursor: pointer;
+}
+
+input#start {
+  background-color: crimson;
+}
+
+input#restart {
+  background-color: pink;
+  color: #000000;
+}
+
+select {
+  padding: 5px;
+}
+
+#square, #circle {
+  display: none;
+}
