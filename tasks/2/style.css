@@ -1,0 +1,127 @@
+﻿html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  background-color: #f1eaea;
+}
+
+#title {
+  text-align: center;
+  font-size: 3rem;
+}
+
+#controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#controls button {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.5rem;
+  border: none;
+  margin: 10px;
+  padding: 10px;
+  letter-spacing: 1px;
+  background-color: dodgerblue;
+  color: white;
+  cursor: pointer;
+}
+
+.wrapper {
+  overflow: auto;
+}
+
+table, th, td {
+  border: 1px solid #000000;
+  border-collapse: collapse;
+  letter-spacing: 1px;
+}
+
+table {
+  margin: 0 auto;
+  caption-side: bottom;
+}
+
+table caption {
+  text-align: left;
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+table tr:nth-child(even) {
+  background-color: #f1f1f1;
+}
+
+table tr:nth-child(odd) {
+  background-color: white;
+}
+
+table :not(thead) tr{
+  background-color: yellow;
+}
+
+table tr:first-child {
+  background-color: dodgerblue;
+  color: white;
+}
+
+table tr:not(.headers):hover {
+  background-color: #e6e682;
+}
+
+table th {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+tr td:first-child {
+  text-align: center;
+}
+
+table a {
+  color: #000000;
+  text-decoration: none;
+}
+
+table a:hover {
+  color: blue;
+}
+
+table caption a:nth-of-type(1) {
+  color: blue;
+}
+
+table caption a:nth-of-type(2) {
+  color: crimson;
+}
+
+table button {
+  font-family: 'Rubik', sans-serif;
+  border: none;
+  margin: 5px;
+  padding: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+table button {
+  background-color: mediumseagreen;
+  color: white;
+}

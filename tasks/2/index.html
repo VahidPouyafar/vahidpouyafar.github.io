@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>Task 1</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <h1 id="title">Get records using:</h1>
+
+  <div id="controls">
+    <button type="button" id="ajax">AJAX (XMLHttpRequest)</button><br /><br />
+    <button type="button" id="fetch"> Fetch API (Promise-based)</button>
+  </div>
+  <br />
+
+  <div class="wrapper">
+    <table>
+      <caption>
+        Extracted data from <a href="https://jsonplaceholder.typicode.com/" target="_blank">{JSON} Placeholder</a><br />
+        request url = <a href="https://jsonplaceholder.typicode.com/users" target="_blank">https://jsonplaceholder.typicode.com/users</a>
+      </caption>
+      <thead>
+        <tr class="headers">
+          <th>ID</th>
+          <th>Name</th>
+          <th>Username</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Website</th>
+          <th>More</th>
+        </tr>
+      </thead>
+    </table>
+  </div>
+
+<script src="main.js"></script>
+</body>
+</html>
